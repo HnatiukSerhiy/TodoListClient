@@ -1,0 +1,20 @@
+.nav-link { 
+    width: 20%;
+    align-self: flex-start;
+    margin-left: 20px;
+    position: absolute;
+    top: 20px;
+} 
+
+.nav-link a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 70px;
+    background-color: #9B51E0;
+    color: black;
+    border-radius:10px;
+    cursor:pointer;
+}

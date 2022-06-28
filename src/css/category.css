@@ -1,0 +1,91 @@
+.category-form-container h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.2em;
+    color: white;
+}
+
+.category-form-container {
+    width: 100%;
+    height: 285px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url('../imgs/Rectangle_24.jpg') no-repeat center;
+    background-size: inherit;
+    margin-bottom: 20px;
+}
+
+.category-form-container form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-list-container {
+    display: flex;
+    justify-content: center;
+}
+
+.name-container input {
+    width: 350px;
+    height: 45px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 10px;
+}
+
+.add-btn-container button, .save-btn-container button {
+    width: 120px;
+    height: 45px;
+    background: #9B51E0;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.categories-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-item {
+    display: grid;
+    gap:35px;
+    margin-bottom:10px;
+    padding:0 30px;
+    width: 350px;
+    height: 55px;    
+    border-radius: 10px;
+    grid-template-columns: 200px 40px 40px;
+    background-color: rgba(199, 173, 219, 0.7);
+}
+
+.category-name, .edit-link-container, .delete-btn-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.edit-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.category-form-container .nav-link a {
+    width: 100px;
+}
