@@ -31,6 +31,10 @@ export function UnCompleteTodo(props: any) {
         return category !== undefined ? category.name : null;
     }
 
+    const handleNullDeadline= () => {
+        return props.todo.deadline !== null ? props.todo.deadline.toISOString().split('T')[0] : null;
+    }
+
     return (
         <li className='todo-item'>
             <div hidden aria-disabled>
@@ -40,7 +44,7 @@ export function UnCompleteTodo(props: any) {
                 {props.todo.description}
             </div>
             <div className='deadline'>
-                {props.todo.deadline.toISOString().split('T')[0]}
+                {handleNullDeadline()}
             </div>
             <div className='category'>
                 {handleNullCategory()}   

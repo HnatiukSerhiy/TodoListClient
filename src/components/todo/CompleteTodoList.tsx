@@ -3,7 +3,8 @@ import { RootState } from '../../redux/store';
 import { CompleteTodo } from './CompleteTodo';
 
 export function CompleteTodoList() {
-    const todos = useSelector((state: RootState) => state.todos.todos.filter((todo) => todo.isDone === true));
+    const todos = useSelector((state: RootState) => 
+        state.todos.todos.filter((todo) => todo.isDone === true));
 
     return (
         <div className='complete-todos'>
